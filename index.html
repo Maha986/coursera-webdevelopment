@@ -1,1 +1,136 @@
 <h1>Hello, World</h1>
+<center>
+        <h1>Development</h1>
+    </center>
+
+    <!-- some tags like <strong></strong> <em></em> <br> <hr> -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus hic ipsam unde non, veritatis sint autem velit
+        qui vero iusto repellendus a cupiditate nisi <br> adipisci quisquam <strong> A strong text </strong> quia totam
+        debitis sed necessitatibus! Est consequuntur numquam accusamus incidunt cupiditate eum <em>An emphasied
+            text</em> qui iusto
+        <hr> illum non cumque. Libero harum laborum.
+    </p>
+
+    <!-- Links -->
+    <!-- target attribute used to specify where to open the links
+     _blank => open in new window -->
+    <h3> Links </h3>
+    <a href="https://codewithharry.com/videos/" target="_blank">Code with harry tutorials</a> <br>
+
+    <!-- linking to some other file -->
+    <a href="/maha.html" target="_blank">Open it</a><br>
+
+    <!-- images adding -->
+    <h3> Images </h3>
+    <img src="https://source.unsplash.com/200x150/?nature,water" alt="random remote images">
+
+    <!-- unordered list , without type by default bullets-->
+    <h3> List </h3>
+    <ul type="circle">
+        <li>first item</li>
+        <li>second item</li>
+        <li>third item</li>
+    </ul>
+
+    <!-- ordered list, without type by default numbers-->
+    <ol type="I">
+        <li>first item</li>
+        <li>second item</li>
+        <ol type="i">
+            <li>first nested item</li>
+            <li>second nested item</li>
+            <li>third nested item</li>
+        </ol>
+        <li>third item</li>
+    </ol>
+
+    <!-- tables -->
+    <h3> Tables</h3>
+    <table>
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Class </th>
+                <th> Roll no </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Maha </td>
+                <td> SESE </td>
+                <td> 12 </td>
+            </tr>
+            <tr>
+                <td> Hiba </td>
+                <td> UBIT </td>
+                <td> 18 </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- forms -->
+    <h3> Form </h3>
+    <form>
+        <fieldset>
+            <!-- for making form appear in a box-->
+            <legend> Personal Data </legend>
+            <div>
+                <!-- Used div to make the inputs appear in different lines, br tag can also be used but not recommended-->
+                <Label for="name"> Name: </Label> <!-- using lable will highlight its textbox when click on label-->
+                <input type="text" name="myname" id="name">
+                <!--name is the attribute through which backend will recognize this input element-->
+            </div>
+            <br>
+            <!--temporary adding just to add a space but later on which achieve this using CSS -->
+
+            <div>
+                Class: <input type="text" name="class">
+            </div>
+            <br>
+
+            <div>
+                Roll No: <input type="text" name="roll_no">
+            </div>
+            <br>
+
+            <div>
+                Email: <input type="email" name="Email" required>
+            </div>
+            <br>
+
+            <div>
+                Gender: Male <input type="radio" name="gender">
+                <!-- Since these both are given same name so only one can be selected-->
+                Female <input type="radio" name="gender">
+            </div>
+            <br>
+
+            <div>
+                <label for="employment"> Are you unemployed? </label>
+                <!-- clicking on label will check its related checkbox -->
+                <input type="checkbox" name="employed" id="employment">
+            </div>
+            <br>
+
+            <div>
+                Write About Yourself: <br>
+                <textarea name="intro" cols="30" rows="10"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <input type="submit" value="Submit Now">
+                <!-- Value is the attribute which shows what will be written in button -->
+            
+                <input type="reset" value="reset Now">
+            </div>
+
+        </fieldset>
+    </form>
+
+    <!-- semantic element-- used for helping search engines to understand our website in a better way and rank it  -->
+    <h3> Semantic elements</h3>
+    <details> <!-- Initially hides the details and on clicking what is written in summary, details are shown-->
+        <summary> Maha Javed </summary>
+        Maha Javed, studying in software engineering at NED University of Engineering and Technology. She got her Matriculation degree from Federal Board with A+ and completed Intermediate from Karachi Board also with A+. Being a software developer is her dream and she works hard to fulfill her dream.
+    </details>
